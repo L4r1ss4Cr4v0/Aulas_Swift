@@ -1,0 +1,47 @@
+📌 O que é o Git?
+ é um sistema de controle de versão. Ele guarda o histórico do seu código, ajuda a trabalhar em equipe e evitar que você perca seu trabalho.
+🌐 E o GitHub?
+ é um site onde você , colabora com outras pessoas e mostra seu código.
+🔧 Comandos Básicos que Você Precisa Saber 🟡 git init
+
+
+📌 Use só uma vez, dentro da pasta do seu projeto.🔵 git remote add origin <url>
+
+
+git remote add origin https://github.com/seu-usuario/seu-repo.git
+💡 “origin” é só um nome padrão pro repositório remoto.
+git status 
+
+git status
+🔍 Útil pra saber quais arquivos foram modificados, adicionados ou estão prontos pro commit.
+🟣 git add <caminho do arquivo>
+
+
+git add ContentView.swift
+🟠 git add . 
+
+git add .
+⚠️ Cuidado: adiciona tudo, inclusive arquivos indesejados.
+🔴 git checkout -b nome-da-branch 
+
+git checkout -b nova-feature
+🔁 Branch é uma “cópia” do seu código atual pra trabalhar à parte sem bagunçar o projeto principal.
+⚪ git checkout .
+
+⚠️ Cuidado: isso apaga tudo que não foi salvo com git commit.
+🟫 git commit -m "mensagem"
+
+git commit -m "Adiciona nova tela de login"
+✍️ A mensagem deve resumir o que foi feito.
+🟨 git push
+
+⚠️ Se for a , use o comando abaixo:
+🟧 git push --set-upstream origin nome-da-branch
+
+git push --set-upstream origin nova-feature
+
+📌 Depois disso, só precisa usar git push.✅ Fluxo básico do dia a dia
+git status – Verificar o que mudou
+git add . – Adicionar mudanças
+git commit -m "..." – Salvar no histórico
+git push – Enviar pro GitHub
